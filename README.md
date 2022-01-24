@@ -1,10 +1,10 @@
-# JS-Grow
+# 𝔾𝕣𝕠𝕨 𝕁𝕒𝕧𝕒𝕊𝕔𝕣𝕚𝕡𝕥
 
-***Actividades del área***
+## _Actividades del área_
 
-*Aprender y fortalecer conocimientos en JS*
+_Aprender y fortalecer conocimientos en JS_
 
-***TEMAS VISUALIZADOS***
+**_𝚃𝙴𝙼𝙰𝚂 𝚅𝙸𝚂𝚄𝙰𝙻𝙸𝚉𝙰𝙳𝙾𝚂_**
 
 - Var vs let
 - Constantes
@@ -24,3 +24,6 @@
 - Objetos literales
 - Parámetros REST & Operador Spread
 - Arrow functions
+- Prototipos
+- Herencia prototípica
+- Clases y Herencia
