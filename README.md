@@ -27,3 +27,9 @@ _Aprender y fortalecer conocimientos en JS_
 - Prototipos
 - Herencia prototípica
 - Clases y Herencia
+- Métodos estáticos, getters and setters
+- Objeto console
+- Objeto Date
+- Objeto Math
+- Operador de cortocircuito
+- Alert, confirm and prompt

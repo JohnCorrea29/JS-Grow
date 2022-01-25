@@ -825,6 +825,7 @@ class Perro extends Animal {
         //Super, manda a llamar el constructor padre
         super(nombre, genero);
         this.size = size;
+        this.raza = null;
     }
 
     sonar() {
@@ -835,7 +836,29 @@ class Perro extends Animal {
         console.log("Guauu Guauu!");
     }
 
+    // ***************************************************************************************
+
+    // Métodos estáticos, getters y setters
+
+    // Un método estático se puede ejecutar sin necesidad de instanciar la clase
+
+    static queEres() {
+        console.log("Los perros son animales mamíferos que pertenecen...");
+    }
+
+    // Los setter y getters son métodos especiales que nos permiten establecer y obtener valores de atributos de nuestra clase
+
+    get getRaza() {
+        return this.raza;
+    }
+
+    set setRaza(raza) {
+        this.raza = raza;
+    }
+
 }
+
+Perro.queEres();
 
 const mimi = new Animal("Mimi", "Hembra");
 const scooby = new Perro("Scooby doo", "Macho", "Gigante");
@@ -846,4 +869,219 @@ mimi.sonar();
 console.log(scooby);
 scooby.saludar();
 scooby.sonar();
-scooby.ladrar();*/
+scooby.ladrar();
+//scooby.getRaza();
+console.log(scooby.getRaza);
+//scooby.setRaza();
+scooby.setRaza = "Grán Danés"
+console.log(scooby.getRaza);*/
+
+// ***************************************************************************************
+
+// Objeto console
+
+/*console.log(console);
+console.error("Esto es un error");
+console.warn("Esto es un aviso");
+console.info("Esto es un msj informativo");
+console.log("Registro de lo que ha pasado en nuestra aplicación");
+
+let nombre = "John",
+    apellido = "Correa",
+    edad = 21;
+
+console.log(nombre, apellido, edad);
+console.log(`Hola mi nombres es ${nombre} ${apellido} y tengo ${edad} años`);
+
+console.log(`Hola mi nombres es %s %s y tengo %d años`, nombre, apellido, edad);
+
+console.clear();
+
+console.log(window);
+console.log(document);
+
+console.dir(window);
+console.dir(document);
+
+console.clear();
+
+console.group("Los cursos de @JonMircha en YT");
+console.log("Curso de JS");
+console.log("Curso de Node.js");
+console.log("Curso de PWAs");
+console.log("Curso de FlexBox");
+console.groupEnd();
+
+console.groupCollapsed("Los cursos de @JonMircha en YT");
+console.log("Curso de JS");
+console.log("Curso de Node.js");
+console.log("Curso de PWAs");
+console.log("Curso de FlexBox");
+console.groupEnd();
+
+console.clear();
+
+console.log(console);
+console.table(Object.entries(console).sort());
+
+const numeros = [1, 2, 3, 4, 5],
+    vocales = ["a", "e", "i", "o", "u"];
+
+console.table(numeros);
+console.table(vocales);
+
+const perro = {
+    nombre: "Gin",
+    edad: 2,
+    raza: "Idk"
+}
+
+console.table(perro);
+
+console.clear();
+
+console.time("Cuanto tarda mi código");
+const arreglo = Array(1000000);
+
+for (let i = 0; i < arreglo.length; i++) {
+    arreglo[i] = i;
+}
+
+console.timeEnd("Cuanto tarda mi código");
+
+//console.log(arreglo);
+
+console.clear();
+
+for (let i = 0; i <= 100; i++) {
+    console.count("código for");
+    console.log(i);
+}
+
+console.clear();
+
+let x = 3,
+    y = 2,
+    pruebaXY = "Se espera que X siempre sea menor a Y";
+
+console.assert(x < y, [x, y, pruebaXY]);
+
+console.clear();*/
+
+// ***************************************************************************************
+
+// Objeto Date
+
+/*console.log(Date());
+
+let fecha = new Date();
+console.log(fecha);
+//Día del mes
+console.log(fecha.getDate());
+//Día de la semana
+console.log(fecha.getDay());
+//Mes
+console.log(fecha.getMonth());
+//Año
+console.log(fecha.getFullYear());
+
+console.log("----- Hora ------");
+
+//Hora
+console.log(fecha.getHours());
+//Minutos
+console.log(fecha.getMinutes());
+//Segundos
+console.log(fecha.getSeconds());
+//Milisegundos
+console.log(fecha.getMilliseconds());
+
+console.log(fecha.toString());
+console.log(fecha.toDateString());
+console.log(fecha.toLocaleString());
+console.log(fecha.toLocaleDateString());
+console.log(fecha.toLocaleTimeString());
+console.log(fecha.getTimezoneOffset());
+console.log(fecha.getUTCDate());
+console.log(fecha.getUTCHours());
+console.log(Date.now());
+
+let HBD = new Date(2000, 11, 29);
+console.log(HBD);*/
+
+
+// ***************************************************************************************
+
+// Objeto Math
+
+
+/*console.log(Math);
+console.log(Math.PI);
+//Valor absoluto de un número sin importar + o -
+console.log(Math.abs(-7.8));
+// Redondear
+// Número entero mayor
+console.log(Math.ceil(7.2));
+// Número entero menor
+console.log(Math.floor(7.8));
+// Redondear justamente
+console.log(Math.round(7.49));
+// Raiz cuadrada
+console.log(Math.sqrt(81));
+// Potencia
+console.log(Math.pow(2, 5));
+// Negativo, positivo o 0 || -1, 0, 1
+console.log(Math.sign(0));
+// Random
+console.log(Math.random());
+console.log(Math.random() * 1000);
+console.log(Math.round(Math.random() * 1000));*/
+
+// ***************************************************************************************
+
+// Operador de Cortocircuito
+
+/*Cortocircuito OR: cuando el valor de la izquierda en la expersión siempre pueda validar
+a true, es el valor que se cargará por defecto
+
+Cortocircuito AND: cuando el valor de la izquierda en la expresión siempre pueda validar
+a false, es el valor que se cargará por defecto
+*/
+
+/*function saludar(nombre) {
+    nombre = nombre || "Desconocido"
+    console.log(`Hola ${nombre}`);
+}
+
+saludar("John");
+saludar();
+console.log("Cadena" || "Valor de la derecha");
+console.log(19 || "Valor de la derecha");
+console.log(true || "Valor de la derecha");
+console.log([] || "Valor de la derecha");
+console.log({} || "Valor de la derecha");
+console.log(false || "Valor de la derecha");
+console.log(null || "Valor de la derecha");
+console.log(undefined || "Valor de la derecha");
+console.log("" || "Valor de la derecha");
+console.log(0 || "Valor de la derecha");
+
+console.log(false && "Valor de la derecha");*/
+
+
+// ***************************************************************************************
+
+// Alert, confirm y prompt
+
+//console.log(window);
+/*alert("Esto es una alerta");
+confirm("Esto es una confirmación");
+prompt("Hola esto es un aviso y le permite al usuario ingresar un valor")*/
+
+/*let alerta = alert("Esto es una alerta"),
+    confirmacion = confirm("Esto es una confirmación"),
+    aviso = prompt("Hola esto es un aviso y le permite al usuario ingresar un valor");
+
+console.log(alerta);
+console.log(confirmacion);
+console.log(aviso);*/
