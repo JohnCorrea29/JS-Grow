@@ -33,3 +33,7 @@ _Aprender y fortalecer conocimientos en JS_
 - Objeto Math
 - Operador de cortocircuito
 - Alert, confirm and prompt
+- Expresiones Regulares
+- Funciones Anónimas Autoejecutables
+- Módulos (import / export)
+- Ejercicios de lógica

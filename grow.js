@@ -68,7 +68,7 @@ console.log(colores);*/
      lorem,
      lorem.trim(),
      lorem.split(",")
- );*/
+ );
 
 // ***************************************************************************************
 
@@ -1085,3 +1085,56 @@ prompt("Hola esto es un aviso y le permite al usuario ingresar un valor")*/
 console.log(alerta);
 console.log(confirmacion);
 console.log(aviso);*/
+
+// ***************************************************************************************
+
+// Expresiones Regulares
+
+/*let cadena = "Lorem lorem ipsum dolo1r sit amet consectetur";
+
+// i: ignora mayus o minus, g: buscan en todas
+// let expReg = new RegExp("lorem", "ig");
+
+// console.log(expReg.test(cadena));
+// console.log(expReg.exec(cadena));
+
+let expReg2 = /lorem{1,}/ig;
+
+console.log(expReg2.test(cadena));
+console.log(expReg2.exec(cadena));*/
+
+// ***************************************************************************************
+
+// Funciones Anónimas Autoejecutables
+
+/*(function () {
+    console.log("Mi primer IIFE");
+})();
+
+(function (d, w, c) {
+    console.log("Mi segunda IIFE");
+    console.log(d);
+    console.log(w);
+    c.log(c);
+})(document, window, console);
+
+
+//Formas de escribir funciones anónimas
+
+(function () {
+    console.log("Versión clásica");
+})();
+
+((function () {
+    console.log("Versión Cockford");
+})());
+
++function () {
+    console.log("Versión Unaria");
+}();
+
+!function () {
+    console.log("Versión Facebook");
+}();*/
+
+
