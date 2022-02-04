@@ -37,3 +37,15 @@ _Aprender y fortalecer conocimientos en JS_
 - Funciones Anónimas Autoejecutables
 - Módulos (import / export)
 - Ejercicios de lógica
+- Temporizadores
+- Asincronía y el Evento Loop
+- Callbacks
+- Promesas
+- Async - Await
+- Symbols
+- Sets
+- Maps
+- WeakSets & WeakMaps
+- Iterables & Iteradores
+- Generators
+- Proxies
